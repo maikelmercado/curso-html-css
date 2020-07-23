@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<!--CURSO HTML 5-->
+
+<html lang="es">
+    <head>
+        <title>Primera pagina web</title>
+    </head>
+        <meta charset="utf-8">
+        <meta name="maik mercado" content="primera pagina web">
+        <meta name="descripcion" content="descripcion del sitio ">
+
+        <meta name="keywords" content="tutoriales,html, desarrolo web">
+        <!--keywords es palabras claves para encontrar en buscadores -->
+        
+
+        <body>
+          <header>cabezte</header>
+          <nav>barra de navegacion</nav>
+          <section>seccion principal</section>
+          <aside>columnas</aside>
+          <article>articulos</article>
+          <h1>titulo</h1>
+          <p>parraffo <b>en negrita <br>salto de linea</b></p>
+          <hr> <!--linea divisora  ainterlineado-->
+          <a href="#">VINCULO</a>
+          
+            <figure>
+              <img src="html.png" >
+            </figure>
+          
+          
+
+        <ol> <!--lista organizada-->
+            <li>carro</li>
+            <li>barco</li>
+            <li>avion</li>
+        </ol>
+        <ul> <!--lista No organizada-->
+            <li>carro</li>
+            <li>barco</li>
+            <li>avion</li>
+        </ul>
+        <table border="1">
+            <thead>
+            <tr> <!--fila-->
+                <th>mes</th> <!--columnas-->
+                <th>ahorro</th>
+            </tr>
+            </thead>    
+
+            <tbody>
+            <tr>
+                <td>junio</td>
+                <td>300000</td>
+            </tr>
+            </tbody>
+            <h3>nombre de las personas</h3>
+            <p>peter <meter value="94" min="5" max="100" high="90"></meter></p>
+            <p>jose <meter value="60" min="6" max="100" high="90"></meter></p>
+            <p>juan <meter value="92" min="7" max="100" high="90"></meter></p>
+            
+
+            <h2>resultado de ventas</h2>
+
+            <p> febrero: <progress value="94" min="0"max="100"></progress></p> <!--algunos navegadores no leen la etiqueta meter y se usa la progress-->
+            <p> marzo: <progress value="44" min="0" max="100"></progress></p>
+            <p> junio: <progress value="82" min="0"max="100"></progress></p>
+            <p> diciembre: <progress value="50" min="0" max="100"></progress></p>
+
+            <!--audio -->
+            <audio autoplay controls loop preload="auto">
+            <source src="Toco Toco Tik Tok - Dixson Waz Dj Maik Mercado-2.mp3" type="audio/mp3">
+            </audio>
+
+            <!--video-->
+            <video autoplay controls  loop width="500" height="200">
+
+            <source src="video.mp4" type="video/mp4">
+            </video>
+
+            <!--iframe insertar elementos en html como insertar un video de youtube, mapas, soundcloud-->
+
+            <iframe src="https://www.youtube.com/embed/WXqk3Kf0Qf8" width="500" height="400" frameborder="0" allowfullscreen ></iframe>
+               <!--buscar- ventana- alto- borde- opcion de poner en fullscreen-->
+               <!--se pone embed entre el link de youtube-->
+
+            <!--etiqueta estandar div viene en el html 4, si no deja html 5 divicion -->
+
+
+            <!--FORMULARIOS-->
+            <center><h3>FORMULARIO</h3>
+                 <form>
+                     <label for="texto">Entrada de Texto</label> <!--es para activaar ell label de debe poner un nombre al atributo id que esta input-->
+                     <input id="texto "type="text" placeholder="entrada de texto" value="" required >  <!--readonly sirve para no poder rellenar el cuadro-->
+                                                                                                        <!--required sirve par arelleenar el campo obligatorio-->
+
+                     <br>
+                     <br>
+
+                     <label for="correo">Entrada de Correo</label> 
+                     <input id="correo"type="email" placeholder="entrada de correo" value="" required>  <!--pone una alerta que debe incluir @ y debe tener un dominio-->
+
+                     <br>
+                     <br>
+                     <label for="pass">Entrada contraseña</label> 
+                     <input id="pass"type="password" placeholder="entrada de contraseña" value="" required >  <!-- te esconde los caracteres -->
+
+                     <br>
+                     <br>
+
+                     <input type="number" value="10" min="0" max="20" required> <!--para poner numeros se opuede limitar con atributo min-->
+
+                     <br>
+                     <br>
+
+                     <select>
+                         <option >Opcion 1</option>
+                         <option >Opcion 2</option>
+                         <option >Opcion 3</option>
+
+                     </select>
+
+                     <br>
+                     <br>
+                                                        <!--checkbox sirve para escoger cualquiera -->
+                     <input type="checkbox" id="rojo"><label for="rojo">Rojo</label>
+                     <input type="checkbox" id="amarillo"><label for="Amarillo">Amarillo</label>
+                     <input type="checkbox" id="azul"><label for="azul">Azul</label>
+
+                     <br>
+                     <br>
+                                           <!--radio sirve para escoger solo una  el modificador es name radio es el que da para elegir una de las dos cuando se chequee uno no se cheque el otro (radio)-->
+                     <input type="radio" id="blanco" name="radio"> <label for="blanco">blanco</label>
+                     <input type="radio" id="negro" name="radio"><label for="negro">negro</label>
+
+                     <br>
+                     <br>
+            
+
+
+                     <input type="submit" value="Enviar formulario">
+                
+
+
+
+
+
+
+
+
+                </form> 
+            </center>
+
+
+            
+            <footer>este pie de pagina </footer>
+
+
+    
+
+
+        </table>
+
+        </body>
+     
+</html>   

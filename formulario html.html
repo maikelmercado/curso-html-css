@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario clase html y css</title>
+</head>
+<body>
+    <center><h3>FORMULARIO</h3>
+    <form>
+            <label for="texto">entrada de texto</label>  <!--label es la eqtiqueta que va antes del input, se pone for por el atributo id entonces cuando se apreta se activa el input -->
+            <input id="texto" type="text" placeholder="Entrada de texto" value="">   <!--input eqtiqueta de entrada tyoe tipo de entrada text de texto, placeholder es para escribir, value es donde se va lo que se completa en input-->
+                                                                         <!--readonly campo de lectura que no se puede modificar-->
+        <br>
+        <br>
+            <label for="correo">entrada de correo </label>
+            <input id="correo" type="correo" placeholder="Ingrese un correo" value="">
+        <br>  
+        <br>
+            <label for="contraseña">entrada de contraseña</label>
+            <input id="contraseña" type="password" placeholder="Ingrese contraseña" value="" required> <!--required se pone este atributo por que son campos requeridos obligatorios-->
+        <br>
+        <br>
+            <input type="number"value="10" min="0" max="20" >
+        <br>
+        <br>
+            <select>
+                <option> Opcion 1</option>.
+                <option> Opcion 2</option>
+                <option> Opcion 3</option>
+            </select>
+        <br>
+        <br>
+            <input type="checkbox" id="rojo"> <label for="rojo">Rojo</label>
+            <input type="checkbox" id="amarillo"> <label for="amarillo">Amarillo</label>
+            <input type="checkbox" id="azul"> <label for="azul">Azul</label>
+        <br>
+        <br>
+            <input type="radio" id="blanco" name="radio"  > <label for="blanco">Blanco</label>
+            <input type="radio"id="negro" name="radio"> <label for="negro">Negro</label>
+            <!--el atributo "name" seria el mismo nombre entonces deja escojer uno de los dos, esto es para mandar los datos -->
+            <!--el tributo checked es para mandar un uno ya selecccionado -->
+
+        <br>
+        <br>
+            <!--boton envio-->
+            <input type="submit" value="Enviar Formulario" >
+            
+            
+        
+                
+                                                                    
+
+
+
+
+
+    </form>
+    </center>
+
+
+
+
+</body>
+</html>
